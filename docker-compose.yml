@@ -1,26 +1,26 @@
 version: '3.8'
 services:
   movies:
-    image: swathi2706/paytm_movies:latest
+    image: swathi2706/paytm_movies1:latest
     ports:
-      - "81:80"
+      - "91:80"
     deploy:
       replicas: 3
   train:
-    image: swathi2706/paytm_train:latest
+    image: swathi2706/paytm_train1:latest
     ports:
-      - "82:80"
+      - "92:80"
     deploy:
       replicas: 3
   dth:
-    image: swathi2706/paytm_dth:latest
+    image: swathi2706/paytm_dth1:latest
     ports:
-      - "83:80"
+      - "93:80"
     deploy:
       replicas: 3
   recharge:
-    image: swathi2706/paytm_recharge:latest
+    image: swathi2706/paytm_recharge1:latest
     ports:
-      - "84:80"
+      - "94:80"
     deploy:
       replicas: 3
